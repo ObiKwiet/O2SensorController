@@ -5,7 +5,8 @@ This project reads PPO2 values from an FDO2 sensor, and outputs an analog voltag
 ## Hardware Config
 
 Connect hardware as shown:
-(image here)
+
+![Wiring Diagram](Documentation/O2SensorController.png)
 
 ## Development Environment
 The following software is required: 
@@ -45,5 +46,16 @@ To clone this repository use the following command:
 ```
 git clone https://github.com/ObiKwiet/O2SensorController
 ```
+To update your project with the latest changes from GitHub use
+
+```
+https://github.com/ObiKwiet/O2SensorController
+```
+
+## Compiling and Uploading.
+
+To compile the code in VSCode use Terminal->Run Build Task... and type `Build` in the command bar.
+
+To upload the firmware to the Teensy in VSCode use Terminal->Run Build Task... and type `Upload (TyCommander)` in the command bar.
 
 
