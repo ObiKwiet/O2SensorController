@@ -40,4 +40,10 @@ $ git config --global user.name "John Doe"
 $ git config --global user.email johndoe@example.com
 ```
 
+To clone this repository use the following command: 
+
+```
+git clone https://github.com/ObiKwiet/O2SensorController
+```
+
 
