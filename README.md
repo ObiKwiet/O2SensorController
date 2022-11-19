@@ -49,7 +49,7 @@ git clone https://github.com/ObiKwiet/O2SensorController
 To update your project with the latest changes from GitHub use
 
 ```
-https://github.com/ObiKwiet/O2SensorController
+git pull origin master
 ```
 
 ## Compiling and Uploading.
