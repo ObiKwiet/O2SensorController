@@ -36,7 +36,7 @@ void loop() {
   char serial1InputBuffer[256] = {0};
   int serial1MessageSize;  //Change to size_t?
   int i;
-  int err;
+  int err, dacIntVal;
   double pressure;
   int dacOut;
   
@@ -83,7 +83,20 @@ void loop() {
       
     }
 
-    dacOut = int((63 * pressure) / 0.0806);
+    dacIntVal = int((63 * pressure) / (0.845 * 0.0909));
+    dacOut = int((63 * pressure) / (0.845 * 0.0909));  
+
+    /*
+    63mV is the expected output value for PPO2 of 1. 
+    pressure is the PPO2 measured.
+    .845mV is the voltage step for DAC voltage rail of 3.46V
+    0.0909 is the output voltage divider. 
+    */
+
+    Serial.print("DAC Level:");
+    Serial.print(dacIntVal, DEC);
+    Serial.print("\r\n");
+
 
     dac.setVoltage(dacOut, false);
 
