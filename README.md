@@ -21,6 +21,18 @@ For a VSCode environment with git, install the following:
 * Visual Teensy (For adding libraries or creating a new project) - https://github.com/luni64/VisualTeensy
 * git - https://git-scm.com/download
 
+Be sure to install both Arduino and TyTools to "Program Files" rather than "Program Files (x86), or you'll have to modify the paths in the makefile. 
+
+For VSCode, you'll also need GNU Make. To get that on windows, do the following:
+
+Install Chocolatey: https://chocolatey.org/install
+After installing, open a new PowerShell session as adminstrator, then execute the following two commands:
+
+```
+$ choco
+$ choco install make
+```
+
 Install the following VSCode Extensions: 
 
 * C/C++
