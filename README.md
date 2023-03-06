@@ -29,8 +29,8 @@ Install Chocolatey: https://chocolatey.org/install
 After installing, open a new PowerShell session as adminstrator, then execute the following two commands:
 
 ```
-$ choco
-$ choco install make
+choco
+choco install make
 ```
 
 Install the following VSCode Extensions: 
@@ -49,8 +49,8 @@ At the terminal in the bottom of the screen in VSCode, you can create a Git bash
 Use the following commands to set your username and email, if you just set up git for the first time. You only have to do this once. 
 
 ```
-$ git config --global user.name "John Doe"
-$ git config --global user.email johndoe@example.com
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 ```
 
 To clone this repository use the following command: 
@@ -63,6 +63,13 @@ To update your project with the latest changes from GitHub use
 ```
 git pull origin master
 ```
+
+Finally, add the repository as a destination
+
+```
+git remote add origin https://github.com/ObiKwiet/O2SensorController.git
+```
+
 
 ## Compiling and Uploading.
 

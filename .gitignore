@@ -1,7 +1,6 @@
 # build
 .vsteensy/**
 .vscode/**
-makefile
 
 # dependency files
 *.d
